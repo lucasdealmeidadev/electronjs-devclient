@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "composite": false,
+    "types": ["node"]
+  },
+  "include": [
+    "src/main/**/*.ts",
+    "src/preload/**/*.ts",
+    "src/shared/**/*.ts",
+    "src/database/**/*.ts",
+    "electron.vite.config.*"
+  ],
+  "exclude": [
+    "src/renderer/**/*"
+  ]
+}
